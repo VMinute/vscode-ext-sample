@@ -11,7 +11,8 @@
 	],
 	"activationEvents": [
 		"onCommand:vscode-ext-sample.helloWorld",
-		"onCommand:vscode-ext-sample.testBasicUI"
+		"onCommand:vscode-ext-sample.testBasicUI",
+		"onCommand:vscode-ext-sample.testAdvancedUI"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -23,6 +24,10 @@
 			{
 				"command": "vscode-ext-sample.testBasicUI",
 				"title": "Test basic UI"
+			},
+			{
+				"command": "vscode-ext-sample.testAdvancedUI",
+				"title": "Test advanced UI"
 			}
 		]
 	},
