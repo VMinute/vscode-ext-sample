@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:vscode-ext-sample.helloWorld"
+		"onCommand:vscode-ext-sample.helloWorld",
+		"onCommand:vscode-ext-sample.testBasicUI"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -18,6 +19,10 @@
 			{
 				"command": "vscode-ext-sample.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "vscode-ext-sample.testBasicUI",
+				"title": "Test basic UI"
 			}
 		]
 	},
