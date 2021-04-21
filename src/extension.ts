@@ -4,6 +4,12 @@ import * as vscode from 'vscode';
 import * as quickpick from './quickpick';
 import * as activitybar from './activitybar';
 
+var statusBarItem=vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Left);
+
+async function statusBarCommand() {
+	await vscode.window.showInformationMessage('You clicked on the status bar!');
+}
+
 async function testBasicUI() {
 	var name=await vscode.window.showInputBox({
 		prompt: 'Insert your name'
@@ -94,6 +100,14 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		vscode.commands.registerCommand('vscode-ext-sample.treeViewElementCommand',activitybar.treeViewElementCommand)
 	);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand('vscode-ext-sample.statusBarCommand',statusBarCommand)
+	);
+
+	statusBarItem.command='vscode-ext-sample.statusBarCommand';
+	statusBarItem.text='$(star) vscode-sample';
+	statusBarItem.show();
 }
 
 // this method is called when your extension is deactivated

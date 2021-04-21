@@ -13,7 +13,8 @@
 		"onCommand:vscode-ext-sample.helloWorld",
 		"onCommand:vscode-ext-sample.testBasicUI",
 		"onCommand:vscode-ext-sample.testAdvancedUI",
-		"onView:vscode-ext-sample.uiview"
+		"onView:vscode-ext-sample.uiview",
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -40,8 +41,7 @@
 			},
 			{
 				"command": "vscode-ext-sample.treeViewElementCommand",
-				"title": "Element Command",
-				"group": "navigation"
+				"title": "Element Command"
 			}
 		],
 		"menus": {
