@@ -108,6 +108,10 @@ export function activate(context: vscode.ExtensionContext) {
 	statusBarItem.command='vscode-ext-sample.statusBarCommand';
 	statusBarItem.text='$(star) vscode-sample';
 	statusBarItem.show();
+
+	vscode.workspace.onDidOpenTextDocument( document => {
+		statusBarItem.text=`$(star) ${vscode.workspace.textDocuments.length}`;
+	});
 }
 
 // this method is called when your extension is deactivated

@@ -12,4 +12,5 @@ It shows different features of the VSCode API by adding capabilities to the exte
 | step-2 | In the third step we see more complex way to collect user input. |
 | step-3 | In the fourth step we add an ActivityBar and a tree view. |
 | step-4 | In the fifth step we add commands to our ActivityBar. |
-| step-5 | In the sixt step we add a StatusBarItem |
+| step-5 | In the sixt step we add a StatusBarItem. |
+| step-6 | In the seventh step we see how to manage events generated from the editor. |
