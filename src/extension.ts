@@ -86,6 +86,14 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(
 		vscode.window.registerTreeDataProvider("vscode-ext-sample.uiview", new activitybar.DummyDataProvider())
 	);
+	
+	context.subscriptions.push(
+		vscode.commands.registerCommand('vscode-ext-sample.treeViewTitleCommand',activitybar.treeViewTitleCommand)
+	);
+
+	context.subscriptions.push(
+		vscode.commands.registerCommand('vscode-ext-sample.treeViewElementCommand',activitybar.treeViewElementCommand)
+	);
 }
 
 // this method is called when your extension is deactivated

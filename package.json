@@ -29,8 +29,36 @@
 			{
 				"command": "vscode-ext-sample.testAdvancedUI",
 				"title": "Test advanced UI"
+			},
+			{
+				"command": "vscode-ext-sample.treeViewTitleCommand",
+				"title": "Title Command",
+                "icon": {
+                    "light": "media/light/bell.svg",
+                    "dark": "media/dark/bell.svg"
+                }
+			},
+			{
+				"command": "vscode-ext-sample.treeViewElementCommand",
+				"title": "Element Command",
+				"group": "navigation"
 			}
 		],
+		"menus": {
+			"view/title": [
+				{
+					"command":"vscode-ext-sample.treeViewTitleCommand",
+					"when": "view==vscode-ext-sample.uiview",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command":"vscode-ext-sample.treeViewElementCommand",
+					"when": "view==vscode-ext-sample.uiview && viewItem == even"
+				}
+			]
+		},
 		"viewsContainers": {
 			"activitybar": [
 				{
