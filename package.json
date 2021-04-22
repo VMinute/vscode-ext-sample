@@ -13,6 +13,7 @@
 		"onCommand:vscode-ext-sample.helloWorld",
 		"onCommand:vscode-ext-sample.testBasicUI",
 		"onCommand:vscode-ext-sample.testAdvancedUI",
+		"onCommand:vscode-ext-sample.createTerminal",
 		"onView:vscode-ext-sample.uiview",
 		"onStartupFinished"
 	],
@@ -30,6 +31,10 @@
 			{
 				"command": "vscode-ext-sample.testAdvancedUI",
 				"title": "Test advanced UI"
+			},
+			{
+				"command": "vscode-ext-sample.createTerminal",
+				"title": "Create a new terminal"
 			},
 			{
 				"command": "vscode-ext-sample.treeViewTitleCommand",
