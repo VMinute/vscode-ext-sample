@@ -17,3 +17,4 @@ It shows different features of the VSCode API by adding capabilities to the exte
 | step-7 | In the eight step we add decorators. |
 | step-8 | In the ninth step we see how to manage configuration parameters. |
 | step-9 | In the tenth step we use terminals. |
+| step-10 | In the elevent step we add support for the Monicelli language (supercazzoliamo!) |
